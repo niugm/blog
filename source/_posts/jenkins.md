@@ -1,5 +1,5 @@
 ---
-layout: build
+layout: post
 title: jenkins
 date: 2018-02-16 23:42:38
 tags:
