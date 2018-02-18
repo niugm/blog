@@ -86,8 +86,6 @@ mathjax:
   per_page: false
   cdn: https://cdn.rawgit.com/mathjax/MathJax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
-
-
 # 其他参数
 google_analytics:
 favicon: /favicon.png
@@ -96,29 +94,16 @@ favicon: /favicon.png
 # comments 评论插件
 # 关闭统一为 false
 
-## 网易云跟帖
-### 使用说明 http://cafe.giscafer.com/2017/04/14/gentie-test/
-gentie_productKey: e2fb4051c49842688ce669e634bc983f
-
-## 畅言 (不使用请将appid和appkey都设空或者false)
-### 使用说明：http://changyan.kuaizhan.com/static/help/
-changyan_appid: false  ##appid
-changyan_appkey: false  ##appkey
-## 友言
-### 使用说明
-### 填写友言用户ID http://www.uyan.cc/sites
-youyan_uid: false
-
 # gitment
 ## 教程：https://imsun.net/posts/gitment-introduction/ 网站上进行查看
 gitment:
-  enable: false #如果不使用则设置false关闭
-  owner: giscafer # 你的github名称或者id id的获取方式为https://api.github.com/users/forvoid（你的名称）中的id极为github id
-  repo: giscafer.github.io # 你的留言存放的位置 我的是放在我的github的github page上面
-  client_id: 7e5dd6cdb9xxaxa4cf91a # Register a new OAuth application https://github.com/settings/applications/new
-  client_secret: 97f37d5c27c4a511xx4fxx623d391c85cb97f8
+  enable: true #如果不使用则设置false关闭
+  owner: 7264636 # 你的github名称或者id id的获取方式为https://api.github.com/users/forvoid（你的名称）中的id极为github id
+  repo: niugm.github.io # 你的留言存放的位置 我的是放在我的github的github page上面
+  client_id: 1270bdf0e577982345d2 # Register a new OAuth application https://github.com/settings/applications/new
+  client_secret: e7058b102effed0628a074495639b64e057bb360
 
-## disqus
+## disqus 使用者需要翻墙
 disqus_shortname: false
 
 google_plus:
