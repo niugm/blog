@@ -1,4 +1,4 @@
 ---
-title: about
-date: 2018-02-21 14:54:30
+title: about me
+date: 2018-02-21
 ---
