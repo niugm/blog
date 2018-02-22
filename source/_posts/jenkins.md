@@ -2,7 +2,7 @@
 layout: post
 title: 使用Jenkins实现Hexo自动部署
 date: 2018-02-16 23:42:38
-tags: hexo jenkins
+tags: hexo jenkins
 ---
 > 春节假期，趁着孩子睡觉的时候，手痒想折腾下前端自动化，于是就有了这个博客及这篇文章。
 
