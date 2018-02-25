@@ -15,6 +15,8 @@ tags: hexo jenkins
 * Jenkins：Tomcat内运行的Jenkins.war包  （Ver.2.107）
 * 代码托管：Github
 
+<!-- more -->
+
 ### Github配置
 
 1. 新建一个repo，用于存放Hexo的源码，我这里是新建develop分支为写作分支。
