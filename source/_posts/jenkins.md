@@ -25,7 +25,6 @@ tags: hexo jenkins
 
 ![Github Webhooks](http://p4j8u5n0f.bkt.clouddn.com/2018222145338.jpg)
 注意：在github内配置web hook的Payload URL时，必须以“/”结尾。
-
 3. 进入Personal access tokens，新建一个token，勾选repo、admin:repo_hook权限，将得到的token字符串保存下来，一会Jenkins内设置要用到。
 
 ### Jenkins配置
@@ -56,9 +55,7 @@ Kind选择 secret text，Secret就是我们在Github设置中第3步得到的tok
 1. 新建一个任务，命名为blog，任务类型：构建一个自由风格的软件项目![20182252336](http://p4j8u5n0f.bkt.clouddn.com/20182252336.png)
 
 2. 基础设置
-
 ![201822523747](http://p4j8u5n0f.bkt.clouddn.com/201822523747.png)
-
 设置历史构建保留的天数及个数，减少空间占用。
 
 3. 源码管理
@@ -68,13 +65,10 @@ Kind选择 secret text，Secret就是我们在Github设置中第3步得到的tok
 依次填写repo地址、分支名、源码浏览器选择githubweb，URL等同于repo地址。新增一个Additional Behaviours，选择 Check out to a sub-directory，这里填写一个相对目录(Jenkins的workspace)地址  github/source
 
 4. 选择构建触发器
-
 ![2018225231655](http://p4j8u5n0f.bkt.clouddn.com/2018225231655.png)
-
 构建触发器的作用是当我们提交代码至Github时，Github的钩子会post数据至Jenkins的API，Jenkins获取最新代码后，运行构建命令，这样就实现了自动构建。
 
 5. 构建
-
 ![构建选择 Execute shell](http://p4j8u5n0f.bkt.clouddn.com/2018225231924.png)
 
 Jenkins自动运行脚本，省去人工重复输入。我这里使用了Docker， /srv/nginx/html 是容器内nginx映射的根目录，大家可以根据自己的情况自行设置。
